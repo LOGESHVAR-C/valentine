@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    margin-top: 15%;
+}
+
+h1 {
+    font-size: 42px;
+    color: #fff;
+}
+
+.buttons {
+    margin-top: 30px;
+    position: relative;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.25s ease;
+}
+
+#yesBtn {
+    background: #ff4d6d;
+    color: white;
+    left: 45%;
+}
+
+#noBtn {
+    background: #444;
+    color: white;
+    left: 55%;
+}
+
+/* Floating heart animation */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: floatUp 3s linear infinite;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+}
